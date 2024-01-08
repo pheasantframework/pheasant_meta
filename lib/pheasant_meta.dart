@@ -1,9 +1,10 @@
 /// Support for doing something awesome.
 ///
 /// More dartdocs go here.
-library;
+library pheasant_meta;
 
-export 'meta/metadata.dart';
+export 'src/meta/metadata.dart';
+export 'src/exceptions/exceptions.dart';
 
 export 'package:meta/meta.dart';
 export 'package:meta/dart2js.dart';

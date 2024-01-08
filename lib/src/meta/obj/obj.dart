@@ -1,4 +1,4 @@
-import 'package:pheasant_meta/meta/objects.dart';
+import 'package:pheasant_meta/src/meta/objects.dart';
 
 /// Declares objects that are not supported in HTML5 Standard. These should therefore not be used in a HTML5 interface.
 /// The build system takes note of this and excludes all instances of the object this annotation is annotated to.
