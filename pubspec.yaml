@@ -16,4 +16,5 @@ dev_dependencies:
 
 topics:
   - pheasant
-  - pheasant_meta
+  - meta
+  - metadata
