@@ -14,7 +14,10 @@ class NoHTML5 extends RestrictedAnnotation {
 /// 
 /// An optional [info] field is provided, which calls to the super constructor - [AnnotationObject].
 class AltVersion extends AnnotationObject {
+  /// The start version of the new functionality
   final String version;
+
+  /// The name of the function to be replaced
   final String functionName;
 
   const AltVersion(this.functionName, {required this.version, String info = 'This is an updated version of the function, so the old one is deprecated'})

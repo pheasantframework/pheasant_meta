@@ -1,3 +1,4 @@
+/// The Pheasant Metadata Library
 library pheasant_meta;
 
 export 'src/meta/metadata.dart';
