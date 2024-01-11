@@ -1,9 +1,11 @@
+/// Base class for an exception in the Pheasant Framework
 class PheasantException implements Exception {
   final dynamic message;
 
   PheasantException([this.message]);
 }
 
+/// Base class for an error in the Pheasant Framework
 class PheasantError extends Error {
   final dynamic what;
 
@@ -15,6 +17,7 @@ class PheasantError extends Error {
   factory PheasantError.unimplemented() => PheasantUnimplementedError();
 }
 
+/// Implementation of Unsupported Error in the Pheasant Framework
 class PheasantUnsupportedError extends UnsupportedError implements PheasantError {
   PheasantUnsupportedError(super.message);
 
@@ -22,9 +25,8 @@ class PheasantUnsupportedError extends UnsupportedError implements PheasantError
   get what => message;
 }
 
+/// Implementation of Unimplemented Error in the Pheasant Framework
 class PheasantUnimplementedError extends UnimplementedError implements PheasantError {
   @override
-  // TODO: implement what
-  get what => "";
-
+  get what => "No implementation";
 }
