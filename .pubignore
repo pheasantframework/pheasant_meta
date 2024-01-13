@@ -11,3 +11,5 @@ pubspec.lock
 
 # VSCode
 .vscode/
+
+doc/api/
