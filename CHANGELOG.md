@@ -1,3 +1,7 @@
+## 0.1.0-beta
+
+- Added more metadata objects for `pheasant_temp v0.1.0-beta`
+
 ## 0.1.0-alpha.1
 
 - Minor changes to improve pub score.
