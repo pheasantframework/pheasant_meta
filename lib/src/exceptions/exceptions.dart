@@ -3,6 +3,11 @@ class PheasantException implements Exception {
   final dynamic message;
 
   PheasantException([this.message]);
+
+  @override
+  String toString() {
+    return message;
+  }
 }
 
 /// Base class for an error in the Pheasant Framework
@@ -27,6 +32,11 @@ class PheasantUnsupportedError extends UnsupportedError implements PheasantError
 
 /// Implementation of Unimplemented Error in the Pheasant Framework
 class PheasantUnimplementedError extends UnimplementedError implements PheasantError {
+  PheasantUnimplementedError([String? message]) {
+    if (message != null) what = message;
+  } 
+
+  set what(String msg) => what = msg;
   @override
-  get what => "No implementation";
+  String get what => "No implementation";
 }

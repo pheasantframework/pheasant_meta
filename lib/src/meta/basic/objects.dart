@@ -15,3 +15,9 @@ class RestrictedAnnotation extends AnnotationObject {
 class InfoAnnotation extends AnnotationObject {
   const InfoAnnotation({required super.info});
 }
+
+// TODO: Add documentation for new object.
+
+class StateAnnotation extends AnnotationObject {
+  const StateAnnotation({required super.info});
+}

@@ -1,4 +1,4 @@
-import 'package:pheasant_meta/src/meta/objects.dart';
+import 'package:pheasant_meta/src/meta/basic/objects.dart';
 
 /// Declares objects that are not supported in HTML5 Standard. These should therefore not be used in a HTML5 interface.
 /// The build system takes note of this and excludes all instances of the object this annotation is annotated to.
@@ -36,4 +36,10 @@ class Change extends AnnotationObject {
 
   const Change(this.reason, {this.suggestedFunc, this.suggestedVersion, String info = 'Do not make use of this in later versions'})
   : super(info: info);
+}
+
+// TODO: Add documentation for new object.
+
+class From extends AnnotationObject {
+  const From(String s, {super.info = "This functionality takes effect from the given version."});
 }
