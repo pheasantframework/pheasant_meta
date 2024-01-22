@@ -15,3 +15,11 @@ class RestrictedAnnotation extends AnnotationObject {
 class InfoAnnotation extends AnnotationObject {
   const InfoAnnotation({required super.info});
 }
+
+
+/// Annotation Object used for all annotations requiring and dealing with state management.
+/// 
+/// This is not used directly, but used in constant objects to declare state annotation objects.
+class StateAnnotation extends AnnotationObject {
+  const StateAnnotation({required super.info});
+}

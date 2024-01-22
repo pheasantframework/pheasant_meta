@@ -9,6 +9,8 @@ pubspec.lock
 # Mac
 .DS_Store
 
+pubspec_overrides.yaml
+
 # VSCode
 .vscode/
 
