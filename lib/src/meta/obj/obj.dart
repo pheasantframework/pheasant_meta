@@ -38,8 +38,8 @@ class Change extends AnnotationObject {
   : super(info: info);
 }
 
-// TODO: Add documentation for new object.
 
+/// Annotation object used to denote functionality that will be used from [s], the given version.
 class From extends AnnotationObject {
   const From(String s, {super.info = "This functionality takes effect from the given version."});
 }
