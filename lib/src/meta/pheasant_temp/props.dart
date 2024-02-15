@@ -16,11 +16,11 @@ class BuildAnnotationObject extends AnnotationObject {
 /// This allows dynamic data to be bound and passed from the parent to the child component.
 ///
 /// In every [Prop] object, there are two variables:
-/// the [defaultValue], which represents the default value of the prop if not passed through the child component,
+/// the [defaultTo], which represents the default value of the prop if not passed through the child component,
 /// the [optional] value, which denotes whether the prop is optional or not.
 ///
 /// ```dart
-/// @Prop(defaultValue: 9, optional: true)
+/// @Prop(defaultTo: 9, optional: true)
 /// int myNum;
 /// ```
 ///
@@ -29,17 +29,17 @@ class BuildAnnotationObject extends AnnotationObject {
 /// AppComponent({super.template, this.myNum = 9});
 /// ```
 ///
-/// Whenever this object is passed, if [optional] is set to true, then a [defaultValue] must be passed.
+/// Whenever this object is passed, if [optional] is set to true, then a [defaultTo] must be passed.
 ///
 /// By defualt, any uninitialised variables without the `@Prop()` annotation has no default value, and [optional] is set to `false`.
 ///
 /// None of the variables are required, and all are optional. If you do not want to use such, and want to go to default settings, then you can use the ordinary `@prop` object.
 class Prop extends BuildAnnotationObject {
-  final dynamic defaultValue;
+  final dynamic defaultTo;
 
   final bool optional;
 
-  const Prop({this.defaultValue, this.optional = false});
+  const Prop({this.defaultTo, this.optional = false});
 }
 
 class _NoProp {
@@ -62,7 +62,7 @@ typedef PheasantAnnotation = BuildAnnotationObject;
 /// ```
 ///
 /// This is also the default for any object that does not contain the annotation, but still is uninitialised.
-const prop = Prop(defaultValue: null, optional: false);
+const prop = Prop(defaultTo: null, optional: false);
 
 /// By default, all uninitialised variables are automatically passed as props (i.e constructor arguments) for the component during compilation.
 ///
