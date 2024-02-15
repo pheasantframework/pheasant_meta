@@ -16,14 +16,15 @@ class PheasantError extends Error {
 
   PheasantError({this.what = ""});
 
-  factory PheasantError.unsupported(String message)
-  => PheasantUnsupportedError(message);
+  factory PheasantError.unsupported(String message) =>
+      PheasantUnsupportedError(message);
 
   factory PheasantError.unimplemented() => PheasantUnimplementedError();
 }
 
 /// Implementation of Unsupported Error in the Pheasant Framework
-class PheasantUnsupportedError extends UnsupportedError implements PheasantError {
+class PheasantUnsupportedError extends UnsupportedError
+    implements PheasantError {
   PheasantUnsupportedError(super.message);
 
   @override
@@ -31,10 +32,11 @@ class PheasantUnsupportedError extends UnsupportedError implements PheasantError
 }
 
 /// Implementation of Unimplemented Error in the Pheasant Framework
-class PheasantUnimplementedError extends UnimplementedError implements PheasantError {
+class PheasantUnimplementedError extends UnimplementedError
+    implements PheasantError {
   PheasantUnimplementedError([String? message]) {
     if (message != null) what = message;
-  } 
+  }
 
   set what(String msg) => what = msg;
   @override
