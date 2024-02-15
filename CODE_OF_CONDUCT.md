@@ -2,7 +2,7 @@
 
 ## Overview
 
-As contributors and maintainers of The Pheasant Framework Metadata Package project, we pledge to create a respectful and inclusive environment for everyone involved. We value the participation of each member and want to ensure a positive experience for all.
+As contributors and maintainers of The Pheasant Framework Metadata Package, we pledge to create a respectful and inclusive environment for everyone involved. We value the participation of each member and want to ensure a positive experience for all.
 
 ## Expected Behavior
 
@@ -41,4 +41,4 @@ This code of conduct is adapted from the [Contributor Covenant](https://www.cont
 
 For any questions or clarifications regarding this code of conduct, please contact [this email](raven@tech.nugegroup.com).
 
-Thank you for your cooperation and commitment to fostering a positive and inclusive community for The Pheasant Framework Metadata Package.
+Thank you for your cooperation and commitment to fostering a positive and inclusive community for The Pheasant Framework.
