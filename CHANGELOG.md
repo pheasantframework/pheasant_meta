@@ -1,3 +1,6 @@
+## 0.1.0-tested
+- Added unit tests for metadata.
+
 ## 0.1.0-beta.1
 
 - Minor Updates to the `Prop` constructor reflected in `pheasant_temp v0.1.0-beta.1`
