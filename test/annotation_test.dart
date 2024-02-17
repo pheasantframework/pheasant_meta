@@ -6,7 +6,8 @@ void main() {
     test('Constant Metadata Tests', () => null);
     test('Class Metadata Tests', () {
       final fromObject = From('1.0.0');
-      expect(fromObject.info, equals("This functionality takes effect from the given version."));
+      expect(fromObject.info,
+          equals("This functionality takes effect from the given version."));
     });
   });
   group("Tests for metadata used in build files", () {
@@ -23,7 +24,7 @@ void main() {
       expect(testprop.defaultTo, isNotNull);
       assert(testprop.defaultTo is int);
       assert(testprop.defaultTo == 8);
-      
+
       expect(testprop.optional, isTrue);
     });
   });
