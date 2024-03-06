@@ -1,3 +1,11 @@
+// Copyright (c) 2024 The Pheasant Group. All Rights Reserved.
+// Please see the AUTHORS files for more information.
+// Intellectual property of third-party.
+// 
+// This file, as well as use of the code in it, is governed by an MIT License
+// that can be found in the LICENSE file.
+// You may not use this file except in compliance with the License.
+  
 import 'package:pheasant_meta/src/meta/basic/objects.dart';
 
 /// Declares objects that are not supported in HTML5 Standard. These should therefore not be used in a HTML5 interface.
